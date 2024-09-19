@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "typeRoots": [ "./node_modules/@types", "./types" ],
+    "lib": [ "dom", "dom.iterable", "esnext" ], // Includes libraries like DOM and ESNext
+    "allowJs": true, // Allows JavaScript files to be compiled
+    "skipLibCheck": true, // Skips type checking of declaration files (for faster compilation)
+    "esModuleInterop": true, // Ensures compatibility with ES module imports
+    "allowSyntheticDefaultImports": true, // Allows default imports from modules with no default export
+    "strict": true, // Enables strict type-checking options
+    "forceConsistentCasingInFileNames": true, // Forces case consistency in file names
+    "noFallthroughCasesInSwitch": true, // Ensures no fall-through in switch cases
+    "module": "esnext", // Uses the ESNext module system
+    "moduleResolution": "node", // Resolves modules like Node.js
+    "resolveJsonModule": true, // Allows importing of JSON modules
+    "isolatedModules": true, // Ensures TypeScript compiles each file in isolation
+    "noEmit": true, // Prevents emitting compiled files (since React uses Babel for bundling)
+    "jsx": "react-jsx" // Enables support for JSX syntax in React
+  },
+  "include": [ "src" ] // Only includes files in the "src" folder for compilation
+}
