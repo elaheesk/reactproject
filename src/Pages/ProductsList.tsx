@@ -43,7 +43,7 @@ const ShoppingList: React.FC = () => {
 
     return (
         <div className="container">
-            <div>
+            <div className="bg-slate-300">
                 <Link to="/">Back to home</Link>
                 <button type="button" onClick={() => sortAscending()}>A-Z</button>
                 <button type="button" onClick={() => sortDescending()}>Z-A</button>

@@ -8,7 +8,7 @@ const Products = React.memo(({ product, likeThisProduct }: { product: ProductInf
         console.log("Child component rerendering");
     }, [])
     return (
-        <div className="product">{product.title}
+        <div className="flex flex-row basis-1/3 border-solid border-2 p-2 my-2">{product.title}
             <button style={{ backgroundColor: product.liked ? "red" : "transparent" }} onClick={() => likeThisProduct(product.id)}>Like</button>
             <Link to={`/products/${product.id}`}>Read more</Link>
         </div>
